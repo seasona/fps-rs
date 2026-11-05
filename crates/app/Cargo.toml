@@ -1,0 +1,15 @@
+[package]
+name = "fps-rs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "fps-rs"
+path = "src/main.rs"
+
+[dependencies]
+presentmon-sys = { path = "../presentmon-sys"}
+presentmon = { path = "../presentmon"}
+log.workspace = true
+env_logger.workspace = true

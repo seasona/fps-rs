@@ -1,0 +1,17 @@
+[package]
+name = "presentmon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+presentmon-sys = { path = "../presentmon-sys"}
+log.workspace = true
+thiserror.workspace = true
+
+[dependencies.windows]
+workspace = true
+features = [
+    "Win32_Foundation",
+    "Win32_System_LibraryLoader",
+]

@@ -1,0 +1,10 @@
+[package]
+name = "presentmon-sys"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+
+[build-dependencies]
+bindgen.workspace = true
