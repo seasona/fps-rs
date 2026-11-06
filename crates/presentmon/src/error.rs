@@ -21,6 +21,8 @@ pub enum PmError {
         expected_major: u16,
         expected_minor: u16,
     },
+    #[error("Unexpected layout for metric {metric} (size: {size}, expected 8)")]
+    UnexpectedLayout {metric: u32, size: u64},
     #[error("PresentMonAPI2 error (status: {0})")]
     Other(i32),
 }

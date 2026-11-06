@@ -186,6 +186,7 @@ dependencies = [
  "log",
  "presentmon",
  "presentmon-sys",
+ "windows",
 ]
 
 [[package]]

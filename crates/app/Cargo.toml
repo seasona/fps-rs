@@ -13,3 +13,10 @@ presentmon-sys = { path = "../presentmon-sys"}
 presentmon = { path = "../presentmon"}
 log.workspace = true
 env_logger.workspace = true
+
+[dependencies.windows]
+workspace = true
+features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+]

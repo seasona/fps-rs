@@ -82,6 +82,12 @@ impl Api {
                 sys::PmOpenSessionWithPipe
             ),
             pm_get_api_version: required!("pmGetApiVersion", sys::PmGetApiVersion),
+            pm_set_etw_flush_period: required!("pmSetEtwFlushPeriod", sys::PmSetEtwFlushPeriod),
+            pm_start_tracking_process: required!("pmStartTrackingProcess", sys::PmStartTrackingProcess),
+            pm_stop_tracking_process: required!("pmStopTrackingProcess", sys::PmStopTrackingProcess),
+            pm_register_dynamic_query: required!("pmRegisterDynamicQuery", sys::PmRegisterDynamicQuery),
+            pm_free_dynamic_query: required!("pmFreeDynamicQuery", sys::PmFreeDynamicQuery),
+            pm_poll_dynamic_query: required!("pmPollDynamicQuery", sys::PmPollDynamicQuery),
             ..Default::default()
         })
     }
